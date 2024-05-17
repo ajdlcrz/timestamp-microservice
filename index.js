@@ -20,11 +20,12 @@ app.get("/", function (req, res) {
 
 
 // your first API endpoint... 
-app.get("/api/hello", function (req, res) {
-  res.json({greeting: 'hello API'});
+app.get("/api/:date", function (req, res) {
+  var param1 = req.params.date;
+  var unixTimestamp = parseInt(param1); // Parse the Unix timestamp to an integer
+  var date = new Date(unixTimestamp * 1000); // Convert Unix timestamp to milliseconds
+  res.json({unix: unixTimestamp, utc: date.toUTCString()});
 });
-
-
 
 // Listen on port set in environment variable or default to 3000
 var listener = app.listen(process.env.PORT || 3000, function () {
