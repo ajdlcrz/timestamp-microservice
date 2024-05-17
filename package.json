@@ -1,15 +1,24 @@
 {
-  "name": "Timestamp Microservice",
-  "author": "Alexander Jody Dela Cruz",
+  "name": "timestamp-microservice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Certification Project 1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajdlcrz/timestamp-microservice.git"
+  },
+  "keywords": [
+    "Package"
+  ],
+  "author": "Alexander Jody Dela Cruz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajdlcrz/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/ajdlcrz/timestamp-microservice#readme",
   "dependencies": {
     "@types/node": "^18.0.6",
     "cors": "^2.8.5",
